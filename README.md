@@ -3,10 +3,10 @@ This project contains a **Bash script** (`healthcheck.sh`) that performs a syste
 It is useful for monitoring system performance, services, and resource usage.
 The script logs the following information:
 Current **system date and time**  
- **Uptime** of the system  
- **CPU load** (from uptime command)  
-**Memory usage** (in MB)  
-**Disk space** usage (human-readable format)  
+ **Uptime** of the system  up -p
+ **CPU load** (from uptime command)  uptime
+**Memory usage** (in MB)  free -m
+**Disk space** usage (human-readable format)  df -h
  **Top 5 processes** consuming the most memory  
 **Service status check** for:
   - `nginx`
