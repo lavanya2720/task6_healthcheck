@@ -32,9 +32,9 @@ ps aux --sort=-%mem | head -n 6
 echo "service status"
  for service in nginx ssh; do
     if systemctl is-active --quiet $service; then
-      echo "$service is running ✅"
+      echo "$service is running"
     else
-      echo "$service is NOT running ❌"
+      echo "$service is NOT running"
     fi
   done
 } >> "$LOGFILE"
